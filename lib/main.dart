@@ -24,18 +24,20 @@ class HomePage extends StatelessWidget {
           gradient: LinearGradient(
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
-              colors: [Colors.blue, Colors.red])),
+              colors: [Colors.blueAccent, Colors.red]
+          )
+        ),
         child: Center(
           child: SafeArea(
             child: SingleChildScrollView(
               child: Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: EdgeInsets.all(10.0),
                 child: Column(
                   children: <Widget>[
                     Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 10, top: 35, bottom: 10),
+                          padding: EdgeInsets.only(left: 10, top: 70, bottom: 10),
                           child: Text(
                             '시험 계산기',
                             style: TextStyle(
@@ -49,22 +51,25 @@ class HomePage extends StatelessWidget {
                     ),
                     SizedBox(
                       width: double.infinity,
-                      height: 200,
+                      height: 250,
                       child: RaisedButton(
-                        child: Row(
+                        child: Stack(
                           children: <Widget>[
-                            Container(
-                              child: Text(
-                                '평균 계산',
-                                style: TextStyle(
-                                  fontSize: 40,
-                                  color: Colors.black87
+                            Align(
+                              alignment: Alignment.bottomLeft,
+                              child: Padding(
+                                padding: EdgeInsets.only(bottom: 8),
+                                child: Text(
+                                  '평균 계산',
+                                  style: TextStyle(
+                                    fontSize: 40,
+                                    color: Colors.black87
+                                  ),
                                 ),
-                              ),
-                              alignment: Alignment(-1, 0.85),
+                              )
                             ),
-                            Spacer(),
-                            Container(
+                            Align(
+                              alignment: Alignment.topRight,
                               child: Icon(
                                 Icons.assignment,
                                 size: 190,
@@ -79,25 +84,28 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 10),
+                      padding: EdgeInsets.only(top: 10),
                       child: SizedBox(
                         width: double.infinity,
-                        height: 200,
+                        height: 250,
                         child: RaisedButton(
-                          child: Row(
+                          child: Stack(
                             children: <Widget>[
-                              Container(
-                                child: Text(
-                                  '등급 계산',
-                                  style: TextStyle(
-                                      fontSize: 40,
-                                      color: Colors.black87
-                                  ),
-                                ),
-                                alignment: Alignment(-1, 0.85),
+                              Align(
+                                  alignment: Alignment.bottomLeft,
+                                  child: Padding(
+                                    padding: EdgeInsets.only(bottom: 8),
+                                    child: Text(
+                                      '등급 계산',
+                                      style: TextStyle(
+                                          fontSize: 40,
+                                          color: Colors.black87
+                                      ),
+                                    ),
+                                  )
                               ),
-                              Spacer(),
-                              Container(
+                              Align(
+                                alignment: Alignment.topRight,
                                 child: Icon(
                                   Icons.assessment,
                                   size: 190,
@@ -113,25 +121,28 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 10),
+                      padding: EdgeInsets.only(top: 10),
                       child: SizedBox(
                         width: double.infinity,
-                        height: 200,
+                        height: 250,
                         child: RaisedButton(
-                          child: Row(
+                          child: Stack(
                             children: <Widget>[
-                              Container(
-                                child: Text(
-                                  '크레딧',
-                                  style: TextStyle(
-                                      fontSize: 40,
-                                      color: Colors.black87
-                                  ),
-                                ),
-                                alignment: Alignment(-1, 0.85),
+                              Align(
+                                  alignment: Alignment.bottomLeft,
+                                  child: Padding(
+                                    padding: EdgeInsets.only(bottom: 8),
+                                    child: Text(
+                                      '크레딧',
+                                      style: TextStyle(
+                                          fontSize: 40,
+                                          color: Colors.black87
+                                      ),
+                                    ),
+                                  )
                               ),
-                              Spacer(),
-                              Container(
+                              Align(
+                                alignment: Alignment.topRight,
                                 child: Icon(
                                   Icons.person,
                                   size: 190,
