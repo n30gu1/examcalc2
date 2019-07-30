@@ -50,9 +50,30 @@ class HomePage extends StatelessWidget {
                     width: double.infinity,
                     height: 200,
                     child: RaisedButton(
-                      child: Text('Button'),
+                      child: Row(
+                        children: <Widget>[
+                          Container(
+                            child: Text(
+                              '평균 계산',
+                              style: TextStyle(
+                                fontSize: 40,
+                                color: Colors.black87
+                              ),
+                            ),
+                            alignment: Alignment(-1, 0.85),
+                          ),
+                          Spacer(),
+                          Container(
+                            child: Icon(
+                              Icons.memory,
+                              size: 190,
+                              color: Color.fromRGBO(255, 255, 255, 400.0),
+                            ),
+                          )
+                        ],
+                      ),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                      color: Colors.white,
+                      color: Colors.white70,
                       onPressed: () { print('button pressed'); },
                     ),
                   )
