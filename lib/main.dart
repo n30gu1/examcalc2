@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'avg_calc.dart';
 
 void main() => runApp(MyApp());
 
@@ -80,7 +82,7 @@ class HomePage extends StatelessWidget {
                         ),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                         color: Color.fromRGBO(255, 255, 255, 50.0),
-                        onPressed: () { print('button pressed'); },
+                        onPressed: () { Navigator.of(context).push(AvgCalcRoute()); },
                       ),
                     ),
                     Padding(
@@ -116,7 +118,10 @@ class HomePage extends StatelessWidget {
                           ),
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                           color: Color.fromRGBO(255, 255, 255, 50.0),
-                          onPressed: () { print('button pressed'); },
+                          onPressed: () { Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AvgCalc())
+                          ); },
                         ),
                       ),
                     ),
@@ -166,4 +171,9 @@ class HomePage extends StatelessWidget {
       )
     );
   }
+}
+
+class AvgCalcRoute extends CupertinoPageRoute {
+  AvgCalcRoute()
+      : super(builder: (BuildContext context) => AvgCalc());
 }

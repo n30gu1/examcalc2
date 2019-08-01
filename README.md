@@ -1,6 +1,6 @@
 # examcalc2
 
-renewed examcalc.
+Redesigned Examcalc
 
 ## Getting Started
 
