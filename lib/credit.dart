@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget {
                               Row(
                                 children: <Widget>[
                                   Text(
-                                    'n30gu1',
+                                    'n30gu1 (박성헌)',
                                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
                                   )
                                 ],
@@ -98,7 +98,7 @@ class HomePage extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      '2019년 7월 15일 ~',
+                                      '2019년 7월 15일 ~ \n8월 2일',
                                       style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
                                     )
                                   ],
@@ -124,7 +124,7 @@ class HomePage extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      '제작자',
+                                      '앱 버전',
                                       style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
                                     )
                                   ],
@@ -132,8 +132,8 @@ class HomePage extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      '제작자',
-                                      style: TextStyle(fontSize: 40),
+                                      '0.1 Alpha 1',
+                                      style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
                                     )
                                   ],
                                 ),
@@ -146,6 +146,16 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Row(
+                        children: <Widget>[
+                          Text('Made with ', style: TextStyle(fontWeight: FontWeight.w300, color: Colors.white),),
+                          FlutterLogo(),
+                          Text('Flutter', style: TextStyle(color: Colors.white),)
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
