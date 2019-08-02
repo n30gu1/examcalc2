@@ -1,6 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'avg_calc.dart';
+import 'grade_calc.dart';
+import 'credit.dart';
 
 void main() => runApp(MyApp());
 
@@ -82,7 +83,11 @@ class HomePage extends StatelessWidget {
                         ),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                         color: Color.fromRGBO(255, 255, 255, 50.0),
-                        onPressed: () { Navigator.of(context).push(AvgCalcRoute()); },
+                        onPressed: () { Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AvgCalc())
+                          );
+                        }
                       ),
                     ),
                     Padding(
@@ -120,7 +125,7 @@ class HomePage extends StatelessWidget {
                           color: Color.fromRGBO(255, 255, 255, 50.0),
                           onPressed: () { Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => AvgCalc())
+                            MaterialPageRoute(builder: (context) => GradeCalc())
                           ); },
                         ),
                       ),
@@ -158,7 +163,12 @@ class HomePage extends StatelessWidget {
                           ),
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                           color: Color.fromRGBO(255, 255, 255, 50.0),
-                          onPressed: () { print('button pressed'); },
+                          onPressed: () { Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Credit()
+                            )
+                          ); },
                         ),
                       ),
                     )
@@ -171,9 +181,4 @@ class HomePage extends StatelessWidget {
       )
     );
   }
-}
-
-class AvgCalcRoute extends CupertinoPageRoute {
-  AvgCalcRoute()
-      : super(builder: (BuildContext context) => AvgCalc());
 }

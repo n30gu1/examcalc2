@@ -3,7 +3,7 @@ import  'package:keyboard_actions/keyboard_actions.dart';
 
 
 //Full screen
-class AvgCalc extends StatelessWidget {
+class GradeCalc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -222,7 +222,7 @@ class _ContentState extends State<Content> {
                 child: Row(
                   children: <Widget>[
                     Text(
-                      '평균 계산',
+                      '등급 계산',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
