@@ -31,6 +31,8 @@ class _ContentState extends State<Content> {
   FocusNode _nodeText8 = FocusNode();
   FocusNode _nodeText9 = FocusNode();
   FocusNode _nodeText10 = FocusNode();
+  FocusNode _nodeText11 = FocusNode();
+  FocusNode _nodeText12 = FocusNode();
 
   TextEditingController _t1 = TextEditingController();
   TextEditingController _t2 = TextEditingController();
@@ -42,6 +44,8 @@ class _ContentState extends State<Content> {
   TextEditingController _t8 = TextEditingController();
   TextEditingController _t9 = TextEditingController();
   TextEditingController _t10 = TextEditingController();
+  TextEditingController _t11 = TextEditingController();
+  TextEditingController _t12 = TextEditingController();
 
   double total = 0;
   String strTotal = '0';
@@ -180,6 +184,34 @@ class _ContentState extends State<Content> {
         ),
         KeyboardAction(
           focusNode: _nodeText10,
+          closeWidget: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Text(
+              '완료',
+              style: TextStyle(
+                  color: Colors.blueAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17
+              ),
+            ),
+          ),
+        ),
+        KeyboardAction(
+          focusNode: _nodeText11,
+          closeWidget: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Text(
+              '완료',
+              style: TextStyle(
+                  color: Colors.blueAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17
+              ),
+            ),
+          ),
+        ),
+        KeyboardAction(
+          focusNode: _nodeText12,
           closeWidget: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),
             child: Text(
