@@ -218,7 +218,7 @@ class _ContentState extends State<Content> {
           child: Column(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 10, bottom: 10),
+                padding: const EdgeInsets.only(left: 10, bottom: 10, top: 30),
                 child: Row(
                   children: <Widget>[
                     Text(
@@ -493,7 +493,6 @@ class _ContentState extends State<Content> {
 
     if (_t1.text != '') {
       scoreboard.add(int.parse(_t1.text));
-      print(scoreboard[0]);
     }
     if (_t2.text != '') {
       scoreboard.add(int.parse(_t2.text));

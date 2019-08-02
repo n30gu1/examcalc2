@@ -250,7 +250,7 @@ class _ContentState extends State<Content> {
           child: Column(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 10, bottom: 10),
+                padding: const EdgeInsets.only(left: 10, bottom: 10, top: 30),
                 child: Row(
                   children: <Widget>[
                     Text(
@@ -300,7 +300,7 @@ class _ContentState extends State<Content> {
                                   focusNode: _nodeText2,
                                   maxLength: 3,
                                   decoration: InputDecoration(
-                                    hintText: "과목2"
+                                    hintText: "비율1"
                                   ),
                                 ),
                               ),
@@ -320,7 +320,7 @@ class _ContentState extends State<Content> {
                                   focusNode: _nodeText3,
                                   maxLength: 3,
                                   decoration: InputDecoration(
-                                    hintText: "과목3",
+                                    hintText: "과목2",
                                   ),
                                 ),
                               ),
@@ -336,7 +336,7 @@ class _ContentState extends State<Content> {
                                   focusNode: _nodeText4,
                                   maxLength: 3,
                                   decoration: InputDecoration(
-                                    hintText: "과목4",
+                                    hintText: "비율2",
                                   ),
                                 ),
                               ),
@@ -356,7 +356,7 @@ class _ContentState extends State<Content> {
                                   focusNode: _nodeText5,
                                   maxLength: 3,
                                   decoration: InputDecoration(
-                                    hintText: "과목5",
+                                    hintText: "과목3",
                                   ),
                                 ),
                               ),
@@ -372,7 +372,7 @@ class _ContentState extends State<Content> {
                                   focusNode: _nodeText6,
                                   maxLength: 3,
                                   decoration: InputDecoration(
-                                    hintText: "과목6",
+                                    hintText: "비율3",
                                   ),
                                 ),
                               ),
@@ -392,7 +392,7 @@ class _ContentState extends State<Content> {
                                   focusNode: _nodeText7,
                                   maxLength: 3,
                                   decoration: InputDecoration(
-                                    hintText: "과목7",
+                                    hintText: "과목4",
                                   ),
                                 ),
                               ),
@@ -408,7 +408,7 @@ class _ContentState extends State<Content> {
                                   focusNode: _nodeText8,
                                   maxLength: 3,
                                   decoration: InputDecoration(
-                                    hintText: "과목8",
+                                    hintText: "비율4",
                                   ),
                                 ),
                               ),
@@ -428,7 +428,7 @@ class _ContentState extends State<Content> {
                                   focusNode: _nodeText9,
                                   maxLength: 3,
                                   decoration: InputDecoration(
-                                    hintText: "과목9",
+                                    hintText: "과목5",
                                   ),
                                 ),
                               ),
@@ -444,7 +444,43 @@ class _ContentState extends State<Content> {
                                   focusNode: _nodeText10,
                                   maxLength: 3,
                                   decoration: InputDecoration(
-                                    hintText: "과목10",
+                                    hintText: "비율5",
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Flexible(
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 5),
+                                child: TextField(
+                                  controller: _t11,
+                                  keyboardType: TextInputType.number,
+                                  keyboardAppearance: Brightness.light,
+                                  textAlign: TextAlign.center,
+                                  focusNode: _nodeText11,
+                                  maxLength: 3,
+                                  decoration: InputDecoration(
+                                    hintText: "과목6",
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 5),
+                                child: TextField(
+                                  controller: _t12,
+                                  keyboardType: TextInputType.number,
+                                  keyboardAppearance: Brightness.light,
+                                  textAlign: TextAlign.center,
+                                  focusNode: _nodeText12,
+                                  maxLength: 3,
+                                  decoration: InputDecoration(
+                                    hintText: "비율6",
                                   ),
                                 ),
                               ),
@@ -471,7 +507,7 @@ class _ContentState extends State<Content> {
                           Padding(
                             padding: const EdgeInsets.only(top: 5.0),
                             child: Text(
-                              '종합 평균',
+                              '종합 점수',
                               style: TextStyle(fontSize: 15),
                             ),
                           ),
@@ -520,49 +556,55 @@ class _ContentState extends State<Content> {
   }
 
   void calculate() {
-    int calculated = 0;
-    List<int> scoreboard = [];
+    double calculated = 0;
+    double dummyPercent = 0;
+    List<double> scoreboard = [];
+    List<double> percents = [];
 
     if (_t1.text != '') {
-      scoreboard.add(int.parse(_t1.text));
-      print(scoreboard[0]);
+      scoreboard.add(double.parse(_t1.text));
     }
     if (_t2.text != '') {
-      scoreboard.add(int.parse(_t2.text));
+      percents.add(double.parse(_t2.text));
     }
     if (_t3.text != '') {
-      scoreboard.add(int.parse(_t3.text));
+      scoreboard.add(double.parse(_t3.text));
     }
     if (_t4.text != '') {
-      scoreboard.add(int.parse(_t4.text));
+      percents.add(double.parse(_t4.text));
     }
     if (_t5.text != '') {
-      scoreboard.add(int.parse(_t5.text));
+      scoreboard.add(double.parse(_t5.text));
     }
     if (_t6.text != '') {
-      scoreboard.add(int.parse(_t6.text));
+      percents.add(double.parse(_t6.text));
     }
     if (_t7.text != '') {
-      scoreboard.add(int.parse(_t7.text));
+      scoreboard.add(double.parse(_t7.text));
     }
     if (_t8.text != '') {
-      scoreboard.add(int.parse(_t8.text));
+      percents.add(double.parse(_t8.text));
     }
     if (_t9.text != '') {
-      scoreboard.add(int.parse(_t9.text));
+      scoreboard.add(double.parse(_t9.text));
     }
     if (_t10.text != '') {
-      scoreboard.add(int.parse(_t10.text));
+      percents.add(double.parse(_t10.text));
     }
 
     print(scoreboard);
+    print(percents);
 
     for (int i = 0; i < scoreboard.length; i++) {
-      calculated = calculated + scoreboard[i];
+      dummyPercent = percents[i] / 100;
+      print(dummyPercent);
+      print(scoreboard[i]);
+      calculated = scoreboard[i] * dummyPercent + calculated;
+      print(calculated);
     }
-    total = calculated / scoreboard.length;
+
     setState(() {
-      strTotal = total.toStringAsFixed(2);
+      strTotal = calculated.toStringAsFixed(2);
     });
   }
 }
