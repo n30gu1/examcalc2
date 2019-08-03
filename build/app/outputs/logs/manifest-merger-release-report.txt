@@ -8,7 +8,7 @@ INJECTED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\A
 INJECTED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:1:1-33:12
 INJECTED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:1:1-33:12
 	package
-		ADDED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:2:5-36
+		ADDED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:2:5-34
 		INJECTED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -24,12 +24,12 @@ INJECTED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\A
 application
 ADDED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:9:5-32:19
 	android:label
-		ADDED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:11:9-34
+		ADDED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:11:9-31
 	android:icon
 		ADDED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:12:9-43
 	android:name
 		ADDED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:10:9-57
-activity#com.example.examcalc2.MainActivity
+activity#kr.n30gu1.examcalc2.MainActivity
 ADDED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:13:9-31:20
 	android:launchMode
 		ADDED from C:\Users\n30gu1\Documents\Flutter\examcalc2\android\app\src\main\AndroidManifest.xml:15:13-43

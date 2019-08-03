@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.examcalc2"
     android:versionCode="1"
-    android:versionName="1.0.0" >
+    android:versionName="0.1.0" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -17,9 +17,9 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:icon="@mipmap/ic_launcher"
-        android:label="examcalc2" >
+        android:label="시험 계산기" >
         <activity
-            android:name="com.example.examcalc2.MainActivity"
+            android:name="kr.n30gu1.examcalc2.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
