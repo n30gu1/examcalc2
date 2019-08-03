@@ -8,7 +8,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="examcalc2"
+        android:label="시험 계산기"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
