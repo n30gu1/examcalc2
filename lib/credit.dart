@@ -51,14 +51,14 @@ class HomePage extends StatelessWidget {
                       width: double.infinity,
                       child: RaisedButton(
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.only(top: 3, bottom: 8),
                           child: Column(
                             children: <Widget>[
                               Row(
                                 children: <Widget>[
                                   Text(
                                     '제작자',
-                                    style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                                   )
                                 ],
                               ),
@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
                                 children: <Widget>[
                                   Text(
                                     'n30gu1 (박성헌)',
-                                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
+                                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                                   )
                                 ],
                               ),
@@ -84,14 +84,14 @@ class HomePage extends StatelessWidget {
                         width: double.infinity,
                         child: RaisedButton(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.only(top: 3, bottom: 8),
                             child: Column(
                               children: <Widget>[
                                 Row(
                                   children: <Widget>[
                                     Text(
                                       '제작 기간',
-                                      style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                                      style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                                     )
                                   ],
                                 ),
@@ -99,7 +99,7 @@ class HomePage extends StatelessWidget {
                                   children: <Widget>[
                                     Text(
                                       '2019년 7월 15일 ~ \n8월 2일',
-                                      style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
+                                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                                     )
                                   ],
                                 ),
@@ -118,22 +118,22 @@ class HomePage extends StatelessWidget {
                         width: double.infinity,
                         child: RaisedButton(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.only(bottom: 8, top: 3),
                             child: Column(
                               children: <Widget>[
                                 Row(
                                   children: <Widget>[
                                     Text(
                                       '앱 버전',
-                                      style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                                      style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                                     )
                                   ],
                                 ),
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      '0.1 Alpha 1',
-                                      style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
+                                      '0.1 Beta',
+                                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                                     )
                                   ],
                                 ),
