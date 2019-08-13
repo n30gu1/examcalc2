@@ -1,8 +1,6 @@
 import  'package:flutter/material.dart';
 import  'package:keyboard_actions/keyboard_actions.dart';
 
-
-//Full screen
 class AvgCalc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
