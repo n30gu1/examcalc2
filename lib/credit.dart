@@ -98,7 +98,7 @@ class HomePage extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      '2019년 7월 15일 ~ \n8월 2일',
+                                      '2019년 7월 15일 ~ \n8월 14일',
                                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                                     )
                                   ],
@@ -132,7 +132,7 @@ class HomePage extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      '0.1 Beta',
+                                      '0.2 Beta',
                                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                                     )
                                   ],
