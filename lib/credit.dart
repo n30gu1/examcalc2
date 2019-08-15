@@ -132,7 +132,7 @@ class HomePage extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      '0.2 Beta',
+                                      '0.2.1 Beta',
                                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                                     )
                                   ],
