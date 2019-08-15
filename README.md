@@ -13,6 +13,6 @@ flutter build ios --release
 Android는
 flutter build apk --release
 
-로 빌드하셔서 사용하실 수 있습니다.
+의 방법으로 빌드하셔서 사용하실 수 있습니다.
 * iOS 빌드는 macOS에서만 사용하실 수 있습니다.
 * Flutter SDK가 설치되어야 합니다.
