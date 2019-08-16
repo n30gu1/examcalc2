@@ -5,14 +5,14 @@ Flutter로 제작되었습니다.
 
 # 빌드 방법
 
-clone 한 다음
+## iOS
+```flutter build ios --release```
 
-iOS는
-flutter build ios --release
-
-Android는
-flutter build apk --release
+## Android
+```flutter build apk --release```
 
 의 방법으로 빌드하셔서 사용하실 수 있습니다.
+
+## 유의사항
 * iOS 빌드는 macOS에서만 사용하실 수 있습니다.
 * Flutter SDK가 설치되어야 합니다.
