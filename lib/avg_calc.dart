@@ -320,7 +320,14 @@ class _ContentState extends State<Content> {
                         ),
                       ),
                     ),
+<<<<<<< HEAD
                     SizedBox(
+=======
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8.0, bottom: 1),
+                    child: SizedBox(
+>>>>>>> 35be5c06ad79dd95e8ad93467ba5f69b69f28c56
                       width: double.infinity,
                       child: RaisedButton(
                         child: Text(
