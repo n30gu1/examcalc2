@@ -315,7 +315,7 @@ class _ContentState extends State<Content> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 8.0),
+                    padding: const EdgeInsets.only(top: 8.0, bottom: 1),
                     child: SizedBox(
                       width: double.infinity,
                       child: RaisedButton(

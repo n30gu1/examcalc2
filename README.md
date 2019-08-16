@@ -1,16 +1,18 @@
-# examcalc2
+# 시험 계산기
 
-A new Flutter project.
+간단한 평균 계산 / 등급 계산기입니다.
+Flutter로 제작되었습니다.
 
-## Getting Started
+# 빌드 방법
 
-This project is a starting point for a Flutter application.
+clone 한 다음
 
-A few resources to get you started if this is your first Flutter project:
+iOS는
+flutter build ios --release
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Android는
+flutter build apk --release
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+의 방법으로 빌드하셔서 사용하실 수 있습니다.
+* iOS 빌드는 macOS에서만 사용하실 수 있습니다.
+* Flutter SDK가 설치되어야 합니다.
