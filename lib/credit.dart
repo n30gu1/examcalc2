@@ -132,7 +132,7 @@ class HomePage extends StatelessWidget {
                                 Row(
                                   children: <Widget>[
                                     Text(
-                                      '0.2 Beta',
+                                      '0.2.1 RC',
                                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                                     )
                                   ],
@@ -155,7 +155,7 @@ class HomePage extends StatelessWidget {
                           Text('Flutter', style: TextStyle(color: Colors.white),)
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
