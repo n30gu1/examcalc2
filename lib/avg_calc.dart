@@ -59,288 +59,275 @@ class _ContentState extends State<Content> {
           )
         ),
         child: Center(
-          child: SafeArea(
-            top: false,
-            left: false,
-            right: false,
-            bottom: true,
-            child: SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10, bottom: 10, top: 30),
-                      child: Row(
-                        children: <Widget>[
-                          Text(
-                            '평균 계산',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 43
-                            )
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10, bottom: 10, top: 30),
+                    child: Row(
+                      children: <Widget>[
+                        Text(
+                          '평균 계산',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 43
                           )
-                        ],
-                      ),
+                        )
+                      ],
                     ),
-                    SizedBox(
-                      width: double.infinity,
-                      child: RaisedButton(
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 10, bottom: 20),
-                          child: Column(
-                            children: <Widget>[
-                              Row(
-                                children: <Widget>[
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t1,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText1,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목1",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t2,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText2,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목2"
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t3,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText3,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목3",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t4,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText4,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목4",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t5,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText5,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목5",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t6,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText6,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목6",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t7,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText7,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목7",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t8,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText8,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목8",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t9,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText9,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목9",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                                      child: TextField(
-                                        controller: _t10,
-                                        keyboardType: TextInputType.number,
-                                        keyboardAppearance: Brightness.light,
-                                        textAlign: TextAlign.center,
-                                        focusNode: _nodeText10,
-                                        maxLength: 3,
-                                        decoration: InputDecoration(
-                                          hintText: "과목10",
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                        color: Color.fromRGBO(255, 255, 255, 50.0),
-                        onPressed: () => FocusScope.of(context).requestFocus(FocusNode()),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8.0),
-                      child: SizedBox(
-                        width: double.infinity,
-                        child: RaisedButton(
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: RaisedButton(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10, bottom: 20),
+                        child: Column(
+                          children: <Widget>[
+                            Row(
                               children: <Widget>[
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 5.0),
-                                  child: Text(
-                                    '종합 평균',
-                                    style: TextStyle(fontSize: 15),
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t1,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText1,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목1",
+                                      ),
+                                    ),
                                   ),
                                 ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: <Widget>[
-                                    Padding(
-                                      padding: const EdgeInsets.only(right: 5.0),
-                                      child: Text(
-                                        strTotal,
-                                        style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t2,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText2,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목2"
                                       ),
                                     ),
-                                    Text(
-                                      '점',
-                                      style: TextStyle(fontSize: 18),
-                                    )
-                                  ],
-                                )
+                                  ),
+                                ),
                               ],
                             ),
-                          ),
-                          onPressed: () => FocusScope.of(context).requestFocus(FocusNode()),
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                          color: Color.fromRGBO(255, 255, 255, 50.0)
+                            Row(
+                              children: <Widget>[
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t3,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText3,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목3",
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t4,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText4,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목4",
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: <Widget>[
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t5,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText5,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목5",
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t6,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText6,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목6",
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: <Widget>[
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t7,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText7,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목7",
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t8,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText8,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목8",
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: <Widget>[
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t9,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText9,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목9",
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 5),
+                                    child: TextField(
+                                      controller: _t10,
+                                      keyboardType: TextInputType.number,
+                                      keyboardAppearance: Brightness.light,
+                                      textAlign: TextAlign.center,
+                                      focusNode: _nodeText10,
+                                      maxLength: 3,
+                                      decoration: InputDecoration(
+                                        hintText: "과목10",
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+                      color: Color.fromRGBO(255, 255, 255, 50.0),
+                      onPressed: () => FocusScope.of(context).requestFocus(FocusNode()),
                     ),
-<<<<<<< HEAD
-                    SizedBox(
-=======
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 8.0, bottom: 1),
                     child: SizedBox(
->>>>>>> 35be5c06ad79dd95e8ad93467ba5f69b69f28c56
                       width: double.infinity,
                       child: RaisedButton(
-                        child: Text(
-                          '계산!',
-                          style: TextStyle(color: Colors.white),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.only(top: 5.0),
+                                child: Text(
+                                  '종합 평균',
+                                  style: TextStyle(fontSize: 15),
+                                ),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 5.0),
+                                    child: Text(
+                                      strTotal,
+                                      style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  Text(
+                                    '점',
+                                    style: TextStyle(fontSize: 18),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
+                        onPressed: () => FocusScope.of(context).requestFocus(FocusNode()),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                        onPressed: calculate,
-                        color: Colors.green[500]
+                        color: Color.fromRGBO(255, 255, 255, 50.0)
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                  SizedBox(
+                    width: double.infinity,
+                    child: RaisedButton(
+                      child: Text(
+                        '계산!',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+                      onPressed: calculate,
+                      color: Colors.green[500]
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
