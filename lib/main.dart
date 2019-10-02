@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
           pinned: true,
           expandedHeight: 150,
           flexibleSpace: FlexibleSpaceBar(
-            title: Text('시험 계산기'),
+            title: Text('디자인 테스트'),
           ),
         ),
         SliverList(
