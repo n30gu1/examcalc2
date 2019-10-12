@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'avg_calc.dart';
 import 'grade_calc.dart';
 import 'credit.dart';
@@ -14,55 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      home: Scaffold(body: Home()),
-    );
-  }
-}
-
-class Home extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: <Widget>[
-        SliverAppBar(
-          pinned: true,
-          expandedHeight: 150,
-          flexibleSpace: FlexibleSpaceBar(
-            title: Text('디자인 테스트'),
-          ),
-        ),
-        SliverList(
-          delegate: SliverChildListDelegate(
-              [listRow(context, Icons.account_box, 'Test', HomePage())]),
-        )
-      ],
-    );
-  }
-
-  Widget listRow(
-      BuildContext context, IconData icon, String title, Widget destination) {
-    return Column(
-      children: <Widget>[
-        ListTile(
-          leading: Icon(
-            icon,
-            size: 40,
-          ),
-          title: Text(
-            title,
-            textScaleFactor: 1.3,
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          subtitle: Text('Hello world'),
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => HomePage()));
-          },
-        ),
-        Divider(
-          height: 1,
-        )
-      ],
+      home: Scaffold(body: HomePage()),
     );
   }
 }
